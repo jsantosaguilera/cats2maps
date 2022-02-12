@@ -1,0 +1,61 @@
+#map { 
+    height: 100em;
+    width: 100em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    color: #4ea87d;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+header {
+    padding: 20px 35px;
+    background-color: #6ed8a3;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+    display: inline;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+.hero {
+    background-image: url("../images/domestic-cats-kitten-playing-with-globe-11429CS-U.jpg");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.columns {
+    background-color: rgba(255, 255, 255, 0.644);
+  }
+
+
+
+section {
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    width: 100%;
+    padding: 40px 35px;
+    background-color: #4ea87d;
+}

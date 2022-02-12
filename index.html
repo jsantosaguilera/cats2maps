@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/> 
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+
+    <title>Cats To Maps</title>
+</head>
+
+<body>
+    <header>
+        <h1> Cats to Maps </h1>
+    </header>
+
+
+    <!-- Random Fact display -->
+    <section class="row hero">
+        <div class="columns">
+            <h3>Random Cat Fact</h3>
+            <p id="catFact"> This is where the cat fact shows.... </p>
+        </div>
+        
+        <div class="columns">
+            <!-- Input 3 words for What3Words -->
+            <h3>Choose 3 nouns using the fact for inspiration!</h3>
+            <p id="instructions">Enter in the form of word.word.word</p>
+            <textarea class="words" id="words" placeholder="word1.word2.word3"></textarea><br>
+            <button id="startW3W" class="button">Find Location</button>
+        </div>
+
+        <!-- Show Coordinates -->
+        <div class="columns">
+            <h3> Your words converted into a location: </h3>
+            <p id="coordinates"></p>
+            <!-- <p> This is where the coordinates show.... </p> -->
+        </div>
+
+        
+    </section>
+
+    <!-- Placeholder for Map -->
+    <div class="map" id="map">
+        <h3> Your Cat's location... </h3>
+        <!-- <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.499973447965!2d-122.27302548434591!3d37.87198871433272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857e992a44c3fb%3A0x877ed0412bbfc2d0!2sUC%20Berkeley%20Extension!5e0!3m2!1sen!2sus!4v1644029878216!5m2!1sen!2sus"
+            width="400" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"></iframe> -->
+    </div>
+
+        
+    <div class="footer">
+        <h2>Made with ❤️️ by Sarah, Cullen, Josue and Wendy </h2>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script> 
+    <script src="https://assets.what3words.com/sdk/v3/what3words.js?key=SAVRGQV8"></script>
+    <script src="./assets/javascript/script.js"></script>
+</body>
+</html>
